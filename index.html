@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Junaid | CS Student & Full-Stack Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Mohammed Junaid, a Computer Science student at IIIT Trichy, specializing in scalable full-stack web systems, AI/ML models, Node.js, Django, and Docker containerization.">
+    <meta name="keywords" content="Mohammed Junaid, Web Developer, IIIT Trichy, Portfolio, Full-Stack, React, Django, Docker, FAISS">
+    <meta name="author" content="Mohammed Junaid">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#hero" class="logo" id="logo-link">
+                Mohammed Junaid
+            </a>
+            
+            <nav class="nav-menu" id="navigation-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <!-- Simple Text Theme Switcher -->
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch Theme">
+                    Dark
+                </button>
+                
+                <!-- Mobile Navigation Toggle -->
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container grid-2">
+                <div class="hero-content-left">
+                    <div class="hero-tag">
+                        Available for Internships & Projects
+                    </div>
+                    <h1 class="hero-title">Mohammed Junaid</h1>
+                    <p class="hero-subtitle">Computer Science Student & Full-Stack Developer</p>
+                    <p class="hero-desc">
+                        Currently studying at <strong>IIIT Trichy</strong> (2023 - 2027). I focus on writing clean, efficient code to build robust backend architectures, scalable database interfaces, and modern full-stack applications.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" id="view-projects-btn">
+                            Explore Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="get-in-touch-btn">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <div class="hero-image-frame">
+                        <img src="assets/profile.png" alt="Mohammed Junaid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container grid-2">
+                <div class="about-content-left scroll-reveal">
+                    <div class="section-title-wrap">
+                        <span class="section-subtitle">Biography</span>
+                        <h2 class="section-title">About Me</h2>
+                    </div>
+                    <p class="about-text">
+                        I am a Computer Science student at IIIT Trichy with a passion for building reliable software systems and full-stack environments. I like bridging backend databases, containerized workflows, and direct, functional user interfaces.
+                    </p>
+                    <p class="about-text">
+                        With a structured academic base at the <strong>Indian Institute of Information Technology Tiruchirappalli</strong>, I spend my time designing clean, scalable services and exploring predictive machine learning models.
+                    </p>
+                    
+                    <div class="education-timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-date">2023 - 2027 (Present)</span>
+                            <h3 class="timeline-title">B.Tech in Computer Science and Engineering</h3>
+                            <p class="timeline-sub">IIIT Tiruchirappalli</p>
+                            <p class="timeline-details">Focused on Data Structures, Database Systems, Algorithm Design, and Machine Learning. Cumulative Grade: <strong>7.89 CGPA</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content-right">
+                    <div class="about-cards-grid">
+                        <div class="about-card scroll-reveal delay-1">
+                            <h3 class="about-card-title">Interests & Focus</h3>
+                            <p class="about-card-text">Core domains I study and practice regularly:</p>
+                            <div class="interests-wrap">
+                                <span class="interest-tag">Full-Stack Development</span>
+                                <span class="interest-tag">Machine Learning</span>
+                                <span class="interest-tag">Systems & DevOps</span>
+                                <span class="interest-tag">Fitness & Boxing</span>
+                                <span class="interest-tag">Tennis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="about-card scroll-reveal delay-2">
+                            <h3 class="about-card-title">Languages</h3>
+                            <p class="about-card-text">Linguistic capabilities for global developer integration:</p>
+                            <div class="interests-wrap">
+                                <span class="interest-tag">English (Proficient)</span>
+                                <span class="interest-tag">Hindi</span>
+                                <span class="interest-tag">Telugu</span>
+                                <span class="interest-tag">Urdu</span>
+                                <span class="interest-tag">Spanish (Basic)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Matrix Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Technical Expertise</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                
+                <div class="skills-directory">
+                    <!-- Column 1 -->
+                    <div class="skills-col scroll-reveal">
+                        <h3 class="skills-col-title">Web Technologies</h3>
+                        <ul class="skills-list">
+                            <li><span>HTML & CSS</span><span class="skill-level">Expert</span></li>
+                            <li><span>React.js</span><span class="skill-level">Advanced</span></li>
+                            <li><span>Django</span><span class="skill-level">Advanced</span></li>
+                            <li><span>Node.js</span><span class="skill-level">Advanced</span></li>
+                            <li><span>REST APIs</span><span class="skill-level">Advanced</span></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 2 -->
+                    <div class="skills-col scroll-reveal delay-1">
+                        <h3 class="skills-col-title">AI & ML Tools</h3>
+                        <ul class="skills-list">
+                            <li><span>Scikit-Learn</span><span class="skill-level">Advanced</span></li>
+                            <li><span>FAISS Vector Search</span><span class="skill-level">Advanced</span></li>
+                            <li><span>Pandas / NumPy</span><span class="skill-level">Advanced</span></li>
+                            <li><span>Streamlit</span><span class="skill-level">Intermediate</span></li>
+                            <li><span>Natural Language Processing</span><span class="skill-level">Advanced</span></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3 -->
+                    <div class="skills-col scroll-reveal delay-2">
+                        <h3 class="skills-col-title">Programming Languages</h3>
+                        <ul class="skills-list">
+                            <li><span>Python</span><span class="skill-level">Advanced</span></li>
+                            <li><span>C++</span><span class="skill-level">Advanced</span></li>
+                            <li><span>JavaScript</span><span class="skill-level">Advanced</span></li>
+                            <li><span>C</span><span class="skill-level">Intermediate</span></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 4 -->
+                    <div class="skills-col scroll-reveal delay-3">
+                        <h3 class="skills-col-title">DevOps & Tools</h3>
+                        <ul class="skills-list">
+                            <li><span>Docker</span><span class="skill-level">Advanced</span></li>
+                            <li><span>Minikube</span><span class="skill-level">Intermediate</span></li>
+                            <li><span>GitHub / Git</span><span class="skill-level">Expert</span></li>
+                            <li><span>MongoDB</span><span class="skill-level">Advanced</span></li>
+                            <li><span>Containerization</span><span class="skill-level">Advanced</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Portfolio</span>
+                    <h2 class="section-title">Selected Work</h2>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: Real-Time Chat App (With High-Quality Image) -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-visual">
+                            <img src="assets/nexus.png" alt="NEXUS Anonymous Chat Application" class="project-screenshot">
+                            <span class="project-tags">
+                                <span class="project-tag">Node.js</span>
+                                <span class="project-tag">Docker</span>
+                                <span class="project-tag">Minikube</span>
+                            </span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Anonymous Real-Time Chat Platform</h3>
+                            <p class="project-desc">
+                                A secure, containerized real-time chat application built for private, anonymous interaction. Features localized room orchestrations, dynamic event handling, and container deployment pipelines.
+                            </p>
+                            <div class="project-footer">
+                                <div class="project-status status-completed">
+                                    Completed
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/mohammedjunaid8055/NOX-application" target="_blank" rel="noopener" class="project-link" id="chat-git-link">
+                                        GitHub ↗
+                                    </a>
+                                    <a href="https://nox-application.onrender.com/" target="_blank" rel="noopener" class="project-link" id="chat-live-link">
+                                        Live App ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: FAISS Semantic Search -->
+                    <div class="project-card scroll-reveal delay-1">
+                        <div class="project-visual text-only-visual">
+                            <div class="visual-placeholder-terminal">
+                                <div class="terminal-header">
+                                    <span class="terminal-dot red"></span>
+                                    <span class="terminal-dot yellow"></span>
+                                    <span class="terminal-dot green"></span>
+                                </div>
+                                <div class="terminal-body">
+                                    <code>$ python faiss_search.py --query "semantic similarity"</code>
+                                    <code>> Indexing 10,000+ vector embeddings...</code>
+                                    <code>> Query matched inside index in 0.043s.</code>
+                                </div>
+                            </div>
+                            <span class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">FAISS</span>
+                                <span class="project-tag">NLP</span>
+                            </span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Semantic Search Engine using FAISS</h3>
+                            <p class="project-desc">
+                                A high-performance retrieval module executing vector similarity searches across custom high-density text datasets. Streamlines query embeddings utilizing localized pipelines and Streamlit visualization components.
+                            </p>
+                            <div class="project-footer">
+                                <div class="project-status status-ongoing">
+                                    In Progress
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/mohammedjunaid8055" target="_blank" rel="noopener" class="project-link">
+                                        GitHub ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3: Fitness Platform -->
+                    <div class="project-card scroll-reveal delay-2">
+                        <div class="project-visual text-only-visual">
+                            <div class="visual-placeholder-terminal">
+                                <div class="terminal-header">
+                                    <span class="terminal-dot red"></span>
+                                    <span class="terminal-dot yellow"></span>
+                                    <span class="terminal-dot green"></span>
+                                </div>
+                                <div class="terminal-body">
+                                    <code>$ python manage.py runserver</code>
+                                    <code>> Loading fitness tracking schedules...</code>
+                                    <code>> Active Routine Generative Models Online.</code>
+                                </div>
+                            </div>
+                            <span class="project-tags">
+                                <span class="project-tag">Django</span>
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                            </span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Dynamic Fitness Web Platform</h3>
+                            <p class="project-desc">
+                                A structured web platform engineered with Django to handle active exercise schedule creation, dynamic routine recommendations, client progress metric logging, and local metric histories.
+                            </p>
+                            <div class="project-footer">
+                                <div class="project-status status-ongoing">
+                                    In Progress
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/mohammedjunaid8055" target="_blank" rel="noopener" class="project-link">
+                                        GitHub ↗
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Achievements Section -->
+        <section class="achievements-section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">Highlights</span>
+                    <h2 class="section-title">Milestones</h2>
+                </div>
+                
+                <div class="milestones-layout">
+                    <!-- Achievement 1 -->
+                    <div class="milestone-card scroll-reveal">
+                        <span class="milestone-number">01</span>
+                        <div class="milestone-content">
+                            <h3 class="milestone-title">Robust Engineering Workflows</h3>
+                            <p class="milestone-desc">Successfully designed and deployed secure service stacks using containerized applications and event protocols to achieve high reliability and speed.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Achievement 2 -->
+                    <div class="milestone-card scroll-reveal delay-1">
+                        <span class="milestone-number">02</span>
+                        <div class="milestone-content">
+                            <h3 class="milestone-title">Advanced Vector Retrievals</h3>
+                            <p class="milestone-desc">Engineered similarity search algorithms integrating FAISS and text embedding models to execute sub-second matching across dense matrices.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Achievement 3 -->
+                    <div class="milestone-card scroll-reveal delay-2">
+                        <span class="milestone-number">03</span>
+                        <div class="milestone-content">
+                            <h3 class="milestone-title">IIIT Tiruchirappalli CSE</h3>
+                            <p class="milestone-desc">Maintained strict academic focus at a premier national engineering institution, tracking a solid cumulative 7.89 CGPA score in Computer Science.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Achievement 4 -->
+                    <div class="milestone-card scroll-reveal delay-3">
+                        <span class="milestone-number">04</span>
+                        <div class="milestone-content">
+                            <h3 class="milestone-title">Discipline & Consistency</h3>
+                            <p class="milestone-desc">Integrating challenging physical training regimens (boxing, fitness work, tennis) alongside software schedules to sustain long-term stamina.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Left: Info -->
+                    <div class="contact-info scroll-reveal">
+                        <div class="section-title-wrap" style="margin-bottom: 0;">
+                            <span class="section-subtitle">Collaboration</span>
+                            <h2 class="section-title">Let's Connect</h2>
+                        </div>
+                        <p class="contact-intro">
+                            If you have a project idea, open roles, or want to discuss full-stack developer opportunities, feel free to send a direct message.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <!-- Email -->
+                            <div class="contact-item">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:j27557343@gmail.com" class="contact-value">j27557343@gmail.com</a>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="contact-item">
+                                <span class="contact-label">WhatsApp / Phone</span>
+                                <a href="tel:+919652134605" class="contact-value">+91 9652134605</a>
+                            </div>
+                            
+                            <!-- Location -->
+                            <div class="contact-item">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Anantapur, India</span>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/mohammedjunaid8055" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub Profile" id="git-profile-link">
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohammad-junaid-903518294?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn Profile" id="linkedin-profile-link">
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Form -->
+                    <div class="contact-form-wrap scroll-reveal delay-1">
+                        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Web3Forms Access Key Integration -->
+                            <input type="hidden" name="access_key" value="798b8e04-de1b-49d0-b0f1-013f7c2e2adf">
+                            
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Your Message</label>
+                                <textarea id="form-message" name="message" class="form-input" placeholder="Briefly describe your project or role..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" id="contact-submit" style="width: 100%;">
+                                Send Message
+                            </button>
+                            
+                            <div class="form-status-msg" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-layout">
+                <a href="#hero" class="footer-logo">
+                    Mohammed Junaid
+                </a>
+                <div class="footer-nav">
+                    <a href="#hero" class="footer-nav-link">Home</a>
+                    <a href="#about" class="footer-nav-link">About</a>
+                    <a href="#skills" class="footer-nav-link">Skills</a>
+                    <a href="#projects" class="footer-nav-link">Projects</a>
+                    <a href="#contact" class="footer-nav-link">Contact</a>
+                </div>
+                <p class="footer-copyright">
+                    © <span id="current-year">2026</span> Mohammed Junaid. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
