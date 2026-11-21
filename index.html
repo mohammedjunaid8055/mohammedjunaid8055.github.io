@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Junaid | CS Student & Full-Stack Developer</title>
+    <title>Mohammed Junaid // MISSION CONTROL — Digital Engineer's Workspace</title>
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio of Mohammed Junaid, a Computer Science student at IIIT Trichy, specializing in scalable full-stack web systems, AI/ML models, Node.js, Django, and Docker containerization.">
-    <meta name="keywords" content="Mohammed Junaid, Web Developer, IIIT Trichy, Portfolio, Full-Stack, React, Django, Docker, FAISS">
+    <!-- Meta & OpenGraph SEO -->
+    <meta name="description" content="Mission Control: Portfolio of Mohammed Junaid, Computer Science undergraduate at IIIT Tiruchirappalli and UAV Networks Research Intern at IIITDM Kancheepuram.">
+    <meta name="keywords" content="Mohammed Junaid, IIIT Trichy, IIITDM Kancheepuram, FANET, ROS2, PX4, Machine Learning, Full-Stack, Mission Control">
     <meta name="author" content="Mohammed Junaid">
     
-    <!-- CSS Stylesheet -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="header">
-        <div class="container">
-            <a href="#hero" class="logo" id="logo-link">
-                Mohammed Junaid
+    <!-- ======================================================================
+         1. Header & Telemetry Navigation
+         ====================================================================== -->
+    <header class="header" id="site-header">
+        <div class="container header-inner">
+            <!-- Brand Monogram -->
+            <a href="#hero" class="brand-link" aria-label="Mission Control Home">
+                <div class="brand-monogram">MJ</div>
+                <div class="brand-text">
+                    <span class="brand-name">MOHAMMED JUNAID</span>
+                    <span class="brand-meta">SYS://MISSION_CONTROL</span>
+                </div>
             </a>
             
-            <nav class="nav-menu" id="navigation-menu">
-                <a href="#hero" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <!-- Main Navigation -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active"><span class="nav-link-num">01</span> HOME</a>
+                <a href="#about" class="nav-link"><span class="nav-link-num">02</span> ABOUT</a>
+                <a href="#projects" class="nav-link"><span class="nav-link-num">03</span> PROJECTS</a>
+                <a href="#skills" class="nav-link"><span class="nav-link-num">04</span> SKILLS</a>
+                <a href="#experience" class="nav-link"><span class="nav-link-num">05</span> EXPERIENCE</a>
+                <a href="#certifications" class="nav-link"><span class="nav-link-num">06</span> CERTS</a>
+                <a href="#contact" class="nav-link"><span class="nav-link-num">07</span> CONTACT</a>
             </nav>
             
-            <div class="header-actions">
-                <!-- Simple Text Theme Switcher -->
-                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Switch Theme">
-                    Dark
-                </button>
+            <!-- Telemetry Indicator & Mobile Toggle -->
+            <div class="header-telemetry">
+                <div class="status-badge">
+                    <span class="status-beacon"></span>
+                    <span>SYSTEM: NOMINAL // ALL SYSTEMS GO</span>
+                </div>
                 
-                <!-- Mobile Navigation Toggle -->
-                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -47,72 +57,27 @@
     </header>
 
     <main>
-        <!-- 1. Hero Section -->
+        <!-- ==================================================================
+             2. Hero Section — Mission Command Center
+             ================================================================== -->
         <section id="hero" class="hero-section">
-            <div class="container grid-2">
-                <div class="hero-content-left">
-                    <div class="hero-tag">
-                        Available for Internships & Projects
-                    </div>
-                    <h1 class="hero-title">Mohammed Junaid</h1>
-                    <p class="hero-subtitle">Computer Science Student & Full-Stack Developer</p>
-                    <p class="hero-desc">
-                        Currently studying at <strong>IIIT Trichy</strong> (2023 - 2027). I focus on writing clean, efficient code to build robust backend architectures, scalable database interfaces, and modern full-stack applications.
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary" id="view-projects-btn">
-                            Explore Projects
-                        </a>
-                        <a href="#contact" class="btn btn-secondary" id="get-in-touch-btn">Get In Touch</a>
-                    </div>
+            <div class="container">
+                <!-- Telemetry Ticker -->
+                <div class="telemetry-ticker">
+                    <span class="ticker-beacon">● TELEMETRY LINK</span>
+                    <span>NODE: TRICHY_STATION</span>
+                    <span>LAT: 10.7589° N</span>
+                    <span>LON: 78.8132° E</span>
+                    <span>CLEARANCE: RESEARCH_INTERN</span>
                 </div>
                 
-                <div class="hero-image-container">
-                    <div class="hero-image-frame">
-                        <img src="assets/profile.png" alt="Mohammed Junaid">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 2. About Me Section -->
-        <section id="about" class="about-section">
-            <div class="container grid-2">
-                <div class="about-content-left scroll-reveal">
-                    <div class="section-title-wrap">
-                        <span class="section-subtitle">Biography</span>
-                        <h2 class="section-title">About Me</h2>
-                    </div>
-                    <p class="about-text">
-                        I am a Computer Science student at IIIT Trichy with a passion for building reliable software systems and full-stack environments. I like bridging backend databases, containerized workflows, and direct, functional user interfaces.
-                    </p>
-                    <p class="about-text">
-                        With a structured academic base at the <strong>Indian Institute of Information Technology Tiruchirappalli</strong>, I spend my time designing clean, scalable services and exploring predictive machine learning models.
-                    </p>
-                    
-                    <div class="education-timeline">
-                        <div class="timeline-item">
-                            <span class="timeline-date">2023 - 2027 (Present)</span>
-                            <h3 class="timeline-title">B.Tech in Computer Science and Engineering</h3>
-                            <p class="timeline-sub">IIIT Tiruchirappalli</p>
-                            <p class="timeline-details">Focused on Data Structures, Database Systems, Algorithm Design, and Machine Learning. Cumulative Grade: <strong>7.89 CGPA</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-content-right">
-                    <div class="about-cards-grid">
-                        <div class="about-card scroll-reveal delay-1">
-                            <h3 class="about-card-title">Interests & Focus</h3>
-                            <p class="about-card-text">Core domains I study and practice regularly:</p>
-                            <div class="interests-wrap">
-                                <span class="interest-tag">Full-Stack Development</span>
-                                <span class="interest-tag">Machine Learning</span>
-                                <span class="interest-tag">Systems & DevOps</span>
-                                <span class="interest-tag">Fitness & Boxing</span>
-                                <span class="interest-tag">Tennis</span>
-                            </div>
-                        </div>
+                <div class="hero-grid">
+                    <!-- Left Hero Content -->
+                    <div class="hero-content">
+                        <h1 class="hero-headline">
+                            BUILDING <span class="highlight">INTELLIGENCE.</span><br>
+                            ENGINEERING <span class="highlight">POSSIBILITIES.</span>
+                        </h1>
                         
                         <div class="about-card scroll-reveal delay-2">
                             <h3 class="about-card-title">Languages</h3>
@@ -372,45 +337,820 @@
                             If you have a project idea, open roles, or want to discuss full-stack developer opportunities, feel free to send a direct message.
                         </p>
                         
-                        <div class="contact-details">
-                            <!-- Email -->
-                            <div class="contact-item">
-                                <span class="contact-label">Email</span>
-                                <a href="mailto:j27557343@gmail.com" class="contact-value">j27557343@gmail.com</a>
+                        <!-- Engineering Specs Grid -->
+                        <div class="spec-dashboard-grid">
+                            <div class="spec-cell">
+                                <span class="spec-cell-label">Discipline</span>
+                                <span class="spec-cell-val">Computer Science</span>
                             </div>
-                            
-                            <!-- Phone -->
-                            <div class="contact-item">
-                                <span class="contact-label">WhatsApp / Phone</span>
-                                <a href="tel:+919652134605" class="contact-value">+91 9652134605</a>
+                            <div class="spec-cell accent">
+                                <span class="spec-cell-label">Domain</span>
+                                <span class="spec-cell-val">Applied AI / Software</span>
                             </div>
-                            
-                            <!-- Location -->
-                            <div class="contact-item">
-                                <span class="contact-label">Location</span>
-                                <span class="contact-value">Anantapur, India</span>
+                            <div class="spec-cell">
+                                <span class="spec-cell-label">Institution</span>
+                                <span class="spec-cell-val">IIIT Trichy</span>
+                            </div>
+                            <div class="spec-cell accent">
+                                <span class="spec-cell-label">Metric</span>
+                                <span class="spec-cell-val">CGPA: 7.86</span>
+                            </div>
+                            <div class="spec-cell">
+                                <span class="spec-cell-label">Timeline</span>
+                                <span class="spec-cell-val">2027 Graduate</span>
                             </div>
                         </div>
                         
-                        <div class="social-links">
-                            <a href="https://github.com/mohammedjunaid8055" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub Profile" id="git-profile-link">
-                                GitHub
+                        <!-- CTA Actions -->
+                        <div class="hero-actions-row">
+                            <a href="#projects" class="btn btn-primary">► View Active Missions</a>
+                            <a href="#certifications" class="btn btn-secondary">⚡ Verified Credential</a>
+                            <a href="#contact" class="btn btn-ghost">✉ Establish Contact</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Hero Viewfinder (Portrait HUD) -->
+                    <div class="hero-viewfinder-card bracket-box">
+                        <div class="viewfinder-header">
+                            <span>OPERATOR PROFILE // MJ-2027</span>
+                            <span class="mono" style="color: var(--status-nominal);">ONLINE [REC]</span>
+                        </div>
+                        
+                        <div class="viewfinder-frame">
+                            <img src="assets/profile.png" alt="Mohammed Junaid - Computer Science Engineer">
+                            <div class="viewfinder-crosshair"></div>
+                        </div>
+                        
+                        <div class="viewfinder-footer">
+                            <span>AFFILIATION: IIIT TIRUCHIRAPPALLI</span>
+                            <span>RESEARCH: FANET // ROS2</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Interactive CLI Terminal Panel -->
+                <div class="terminal-block-wrap">
+                    <div class="terminal-panel bracket-box" id="mission-terminal">
+                        <div class="terminal-titlebar">
+                            <div class="terminal-dots">
+                                <span class="tdot tdot-close"></span>
+                                <span class="tdot tdot-min"></span>
+                                <span class="tdot tdot-max"></span>
+                            </div>
+                            <span class="terminal-title-text">bash — guest@mission-control:~ (interactive engineering console)</span>
+                            <span class="terminal-meta-tag">PORT: 8080 // TEL-ACTIVE</span>
+                        </div>
+                        
+                        <div class="terminal-screen" id="terminal-screen">
+                            <div class="terminal-history" id="terminal-history">
+                                <div class="term-line system">[SYS_INIT] Establishing telemetry link to IIIT Trichy ground station... OK</div>
+                                <div class="term-line system">[KERNEL] Mission Control telemetry environment initialized for Mohammed Junaid.</div>
+                                <div class="term-line success">[READY] Type <span class="code-cyan">'help'</span> or select an active command pill below to inspect system logs.</div>
+                            </div>
+                            
+                            <form class="terminal-input-row" id="terminal-form">
+                                <span class="term-prompt">guest@mission-control:~$</span>
+                                <input type="text" class="term-input" id="terminal-input" autocomplete="off" spellcheck="false" placeholder="type 'help', 'about', 'projects', 'skills'...">
+                            </form>
+                        </div>
+                        
+                        <div class="terminal-quick-bar">
+                            <span class="quick-bar-label">Quick Execute:</span>
+                            <button type="button" class="cmd-pill" data-cmd="help">help</button>
+                            <button type="button" class="cmd-pill" data-cmd="about">about</button>
+                            <button type="button" class="cmd-pill" data-cmd="projects">projects</button>
+                            <button type="button" class="cmd-pill" data-cmd="skills">skills</button>
+                            <button type="button" class="cmd-pill" data-cmd="exp">exp</button>
+                            <button type="button" class="cmd-pill" data-cmd="certs">certs</button>
+                            <button type="button" class="cmd-pill" data-cmd="contact">contact</button>
+                            <button type="button" class="cmd-pill" data-cmd="clear">clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             3. About Section — Engineer Technical Profile
+             ================================================================== -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header-block">
+                    <span class="section-label">SYSTEM SPECIFICATION</span>
+                    <h2 class="section-title">
+                        About The Engineer
+                        <span class="section-title-sub">// BACKGROUND & CORE CAPABILITIES</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-dashboard-grid">
+                    <!-- Left: Narrative & Core Pillars -->
+                    <div class="about-narrative-col">
+                        <p class="about-text-narrative">
+                            I am a Computer Science undergraduate at the <strong>Indian Institute of Information Technology Tiruchirappalli (IIIT Trichy)</strong>, with a technical focus on applied artificial intelligence, backend distributed engineering, and autonomous robotics simulation.
+                        </p>
+                        <p class="about-text-narrative">
+                            Recently, I completed a research internship at <strong>IIITDM Kancheepuram</strong> under the guidance of <strong>Dr. Preeth</strong>, conducting telemetry data generation and routing intelligence on Flying Ad-Hoc Networks (FANETs). I bridge low-level systems, simulation environments, and modern web application stacks to engineer reliable, data-intensive software products.
+                        </p>
+                        
+                        <!-- Core Pillars -->
+                        <div class="about-pillars-grid">
+                            <div class="pillar-card">
+                                <span class="pillar-num">PILLAR // 01</span>
+                                <h3 class="pillar-title">Applied AI & Machine Learning</h3>
+                                <p class="pillar-desc">
+                                    Developing high-dimensional embedding search algorithms (FAISS), supervised learning ensembles (XGBoost, CatBoost), and LLM API integrations with prompt engineering.
+                                </p>
+                            </div>
+                            
+                            <div class="pillar-card">
+                                <span class="pillar-num">PILLAR // 02</span>
+                                <h3 class="pillar-title">Robotics & UAV Swarm Simulation</h3>
+                                <p class="pillar-desc">
+                                    Simulating multi-agent Flying Ad-Hoc Networks in Gazebo using ROS2 and PX4-Autopilot, synthesizing realistic mobility datasets for supervised link quality prediction.
+                                </p>
+                            </div>
+                            
+                            <div class="pillar-card">
+                                <span class="pillar-num">PILLAR // 03</span>
+                                <h3 class="pillar-title">Scalable Backend & Containerization</h3>
+                                <p class="pillar-desc">
+                                    Engineering resilient backend architectures with Node.js, WebSockets, REST APIs, and Django, coupled with Docker containerization and Kubernetes (Minikube).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Technical Spec Sheet -->
+                    <div class="about-spec-col">
+                        <div class="meta-spec-sheet bracket-box">
+                            <div class="spec-sheet-header">
+                                <span>ENGINEER_METADATA.JSON</span>
+                                <span>STATUS: VERIFIED</span>
+                            </div>
+                            
+                            <div class="spec-sheet-list">
+                                <div class="spec-row">
+                                    <span class="spec-key">Full Name</span>
+                                    <span class="spec-val">Mohammed Junaid</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-key">Current Base</span>
+                                    <span class="spec-val">IIIT Tiruchirappalli (2023 - 2027)</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-key">Research Base</span>
+                                    <span class="spec-val cyan">IIITDM Kancheepuram (Summer Intern)</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-key">Academic Metric</span>
+                                    <span class="spec-val">7.86 Cumulative GPA</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-key">Core Language Stack</span>
+                                    <span class="spec-val">Python, C++, C, JavaScript, SQL</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-key">Simulation Stack</span>
+                                    <span class="spec-val">ROS2, PX4-Autopilot, Gazebo</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-key">Infrastructure</span>
+                                    <span class="spec-val">Docker, Minikube, Git/GitHub</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-key">Coordinates</span>
+                                    <span class="spec-val">Tiruchirappalli, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             4. Projects Section — Active Missions
+             ================================================================== -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header-block">
+                    <span class="section-label">ACTIVE MISSIONS</span>
+                    <h2 class="section-title">
+                        Engineered Projects & Deployments
+                        <span class="section-title-sub">// VERIFIED SOURCE & RESEARCH IMPLEMENTATIONS</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <!-- Filter Tabs -->
+                <div class="missions-filter-bar">
+                    <button type="button" class="filter-btn active" data-filter="all">[ ALL MISSIONS ]</button>
+                    <button type="button" class="filter-btn" data-filter="ai">[ AI / MACHINE LEARNING ]</button>
+                    <button type="button" class="filter-btn" data-filter="web">[ FULL-STACK & DEVOPS ]</button>
+                    <button type="button" class="filter-btn" data-filter="research">[ UAV RESEARCH ]</button>
+                </div>
+                
+                <!-- Projects Grid -->
+                <div class="missions-grid">
+                    
+                    <!-- Mission 01: Semantic Search Engine -->
+                    <div class="mission-card bracket-box" data-category="ai">
+                        <div class="mission-visual-zone">
+                            <div class="mission-badges-top">
+                                <span class="mission-status-chip status-working">Working Prototype</span>
+                            </div>
+                            <div class="mission-telemetry-screen">
+                                <div class="telemetry-code-block">
+                                    <code>$ python faiss_search.py --vector-dim 384</code>
+                                    <code class="code-cyan">> Loading HuggingFace embeddings... [OK]</code>
+                                    <code class="code-green">> FAISS IndexFlatL2 initialized with 10k vectors</code>
+                                    <code>> Similarity calculation latency: 0.041s</code>
+                                </div>
+                                <code>STATION://STREAMLIT_RUNTIME_ACTIVE</code>
+                            </div>
+                        </div>
+                        
+                        <div class="mission-card-content">
+                            <div class="mission-card-header">
+                                <span class="mission-id-tag">MISSION // 01</span>
+                                <h3 class="mission-title">Semantic Search Engine using FAISS</h3>
+                            </div>
+                            <p class="mission-desc">
+                                Developing semantic search using dense text embeddings and FAISS vector similarity search to retrieve contextually relevant results rather than keyword matching.
+                            </p>
+                            <div class="mission-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">FAISS</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="mission-expandable" id="details-m1">
+                                <span class="expandable-details-title">Telemetry Specifications</span>
+                                Utilizes dense sentence transformers to convert text into multi-dimensional vector spaces. Leverages Facebook AI Similarity Search (FAISS) indexing structures for sub-millisecond nearest neighbor query matching and localized Streamlit UI.
+                            </div>
+                            
+                            <div class="mission-card-footer">
+                                <button type="button" class="mission-toggle-btn" data-target="details-m1">
+                                    <span>[+] Mission Brief</span>
+                                </button>
+                                <div class="mission-links">
+                                    <a href="https://github.com/mohammedjunaid8055" target="_blank" rel="noopener" class="mission-link-item">GitHub ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission 02: AI Summarizer Chatbot -->
+                    <div class="mission-card bracket-box" data-category="ai">
+                        <div class="mission-visual-zone">
+                            <div class="mission-badges-top">
+                                <span class="mission-status-chip status-completed">Completed</span>
+                            </div>
+                            <div class="mission-telemetry-screen">
+                                <div class="telemetry-code-block">
+                                    <code>$ node server.js --router openrouter</code>
+                                    <code class="code-cyan">> Tokenizer pipeline initialized: chunk=2048</code>
+                                    <code class="code-green">> REST Endpoint /api/v1/summarize active</code>
+                                    <code>> LLM Prompt schema verified: status 200</code>
+                                </div>
+                                <code>STATION://REST_API_READY</code>
+                            </div>
+                        </div>
+                        
+                        <div class="mission-card-content">
+                            <div class="mission-card-header">
+                                <span class="mission-id-tag">MISSION // 02</span>
+                                <h3 class="mission-title">AI Summarizer Chatbot</h3>
+                            </div>
+                            <p class="mission-desc">
+                                AI-powered chatbot that summarizes lengthy technical articles and transcripts using LLM APIs, prompt engineering patterns, and backend REST endpoints.
+                            </p>
+                            <div class="mission-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">OpenRouter API</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="mission-expandable" id="details-m2">
+                                <span class="expandable-details-title">Telemetry Specifications</span>
+                                Incorporates resilient error-handling and fallback routing across LLM model families via OpenRouter. Features automated chunking for long-form context windows and prompt-engineered concise analytical summaries.
+                            </div>
+                            
+                            <div class="mission-card-footer">
+                                <button type="button" class="mission-toggle-btn" data-target="details-m2">
+                                    <span>[+] Mission Brief</span>
+                                </button>
+                                <div class="mission-links">
+                                    <a href="https://github.com/mohammedjunaid8055" target="_blank" rel="noopener" class="mission-link-item">GitHub ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission 03: Anonymous Real-Time Chat Application -->
+                    <div class="mission-card bracket-box" data-category="web">
+                        <div class="mission-visual-zone">
+                            <div class="mission-badges-top">
+                                <span class="mission-status-chip status-completed">Completed</span>
+                            </div>
+                            <img src="assets/nexus.png" alt="NEXUS Real-Time Anonymous Chat Screenshot" class="mission-screenshot">
+                        </div>
+                        
+                        <div class="mission-card-content">
+                            <div class="mission-card-header">
+                                <span class="mission-id-tag">MISSION // 03</span>
+                                <h3 class="mission-title">Anonymous Real-Time Chat Platform</h3>
+                            </div>
+                            <p class="mission-desc">
+                                Topic-based anonymous real-time discussion platform engineered with WebSockets, Docker containerization, and local Minikube Kubernetes cluster deployment.
+                            </p>
+                            <div class="mission-tech-stack">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">WebSockets</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Minikube</span>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="mission-expandable" id="details-m3">
+                                <span class="expandable-details-title">Telemetry Specifications</span>
+                                Implements multi-room stateful WebSocket orchestration with zero-persistent tracking for total user anonymity. Fully containerized with a production multi-stage Dockerfile and deployed in a localized Minikube cluster.
+                            </div>
+                            
+                            <div class="mission-card-footer">
+                                <button type="button" class="mission-toggle-btn" data-target="details-m3">
+                                    <span>[+] Mission Brief</span>
+                                </button>
+                                <div class="mission-links">
+                                    <a href="https://github.com/mohammedjunaid8055/NOX-application" target="_blank" rel="noopener" class="mission-link-item">GitHub ↗</a>
+                                    <a href="https://nox-application.onrender.com/" target="_blank" rel="noopener" class="mission-link-item">Live App ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission 04: Dynamic Fitness Web Application -->
+                    <div class="mission-card bracket-box" data-category="web">
+                        <div class="mission-visual-zone">
+                            <div class="mission-badges-top">
+                                <span class="mission-status-chip status-working">Ongoing</span>
+                            </div>
+                            <div class="mission-telemetry-screen">
+                                <div class="telemetry-code-block">
+                                    <code>$ npm run dev --port 3000</code>
+                                    <code class="code-cyan">> Tracking service: routine_generator.js</code>
+                                    <code class="code-green">> Workout metrics logging database: connected</code>
+                                    <code>> Containerization pipeline planned: Docker/K8s</code>
+                                </div>
+                                <code>STATION://LOCAL_DEV_BUILD</code>
+                            </div>
+                        </div>
+                        
+                        <div class="mission-card-content">
+                            <div class="mission-card-header">
+                                <span class="mission-id-tag">MISSION // 04</span>
+                                <h3 class="mission-title">Dynamic Fitness Web Application</h3>
+                            </div>
+                            <p class="mission-desc">
+                                Fitness-focused web application with interactive routine generators, client progress metric logging, and planned containerization via Docker and Kubernetes.
+                            </p>
+                            <div class="mission-tech-stack">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Docker (Planned)</span>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="mission-expandable" id="details-m4">
+                                <span class="expandable-details-title">Telemetry Specifications</span>
+                                Features customized exercise logging routines, body metric analysis, and schedule planning. Actively preparing Docker packaging and Kubernetes deployment manifests for scalable microservice rollout.
+                            </div>
+                            
+                            <div class="mission-card-footer">
+                                <button type="button" class="mission-toggle-btn" data-target="details-m4">
+                                    <span>[+] Mission Brief</span>
+                                </button>
+                                <div class="mission-links">
+                                    <a href="https://github.com/mohammedjunaid8055" target="_blank" rel="noopener" class="mission-link-item">GitHub ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission 05: FANET Routing & Machine Learning Research -->
+                    <div class="mission-card bracket-box" data-category="research">
+                        <div class="mission-visual-zone">
+                            <div class="mission-badges-top">
+                                <span class="mission-status-chip status-research">Research Completed</span>
+                            </div>
+                            <div class="mission-telemetry-screen">
+                                <div class="telemetry-code-block">
+                                    <code>$ ros2 launch fanet_swarm gazebo_uav30.py</code>
+                                    <code class="code-cyan">> PX4-Autopilot connected: 30 nodes active</code>
+                                    <code class="code-green">> Mobility: Random Waypoint & Random Direction</code>
+                                    <code>> Model Benchmark: 13 models evaluated</code>
+                                    <code class="code-cyan">> Aggregate accuracy: 78.89% (Best: ~87%)</code>
+                                </div>
+                                <code>STATION://IIITDMK_RESEARCH_FACILITY</code>
+                            </div>
+                        </div>
+                        
+                        <div class="mission-card-content">
+                            <div class="mission-card-header">
+                                <span class="mission-id-tag">MISSION // 05</span>
+                                <h3 class="mission-title">FANET Routing and Machine Learning Research</h3>
+                            </div>
+                            <p class="mission-desc">
+                                Research project conducted at IIITDM Kancheepuram involving UAV simulation, 30-drone dataset generation, mobility models, and supervised learning for intelligent routing.
+                            </p>
+                            <div class="mission-tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Gazebo</span>
+                                <span class="tech-tag">ROS2</span>
+                                <span class="tech-tag">PX4</span>
+                                <span class="tech-tag">XGBoost</span>
+                                <span class="tech-tag">CatBoost</span>
+                            </div>
+                            
+                            <!-- Expandable Details -->
+                            <div class="mission-expandable" id="details-m5">
+                                <span class="expandable-details-title">Telemetry Specifications</span>
+                                Supervised under Dr. Preeth. Simulated multi-UAV Flying Ad-Hoc Networks in Gazebo using ROS2 and PX4-Autopilot. Captured mobility patterns using Random Waypoint and Random Direction models across 30 UAV nodes. Trained 13 supervised learning models with gradient boosted ensembles achieving an overall benchmark score of 78.89% and peak routing accuracy of ~87%.
+                            </div>
+                            
+                            <div class="mission-card-footer">
+                                <button type="button" class="mission-toggle-btn" data-target="details-m5">
+                                    <span>[+] Mission Brief</span>
+                                </button>
+                                <div class="mission-links">
+                                    <a href="https://drive.google.com/file/d/1rgyGmWBheo0aTZaNvV6C1fNQMtNaPPtc/view?usp=sharing" target="_blank" rel="noopener" class="mission-link-item">View Cert ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             5. Skills Section — Technical Arsenal
+             ================================================================== -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header-block">
+                    <span class="section-label">SUBSYSTEM CAPABILITIES</span>
+                    <h2 class="section-title">
+                        Technical Arsenal
+                        <span class="section-title-sub">// SYSTEM STACKS & INSTRUMENTATION (NO FAKE METRICS)</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="skills-arsenal-grid">
+                    <!-- Category 1: Programming -->
+                    <div class="arsenal-panel bracket-box">
+                        <div class="arsenal-header">
+                            <span class="arsenal-category-title">Programming Languages</span>
+                            <span class="arsenal-count">05 MODULES</span>
+                        </div>
+                        <div class="arsenal-chips-wrap">
+                            <span class="arsenal-chip">Python</span>
+                            <span class="arsenal-chip">C++</span>
+                            <span class="arsenal-chip">C</span>
+                            <span class="arsenal-chip">JavaScript</span>
+                            <span class="arsenal-chip">SQL</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 2: AI / Machine Learning -->
+                    <div class="arsenal-panel bracket-box">
+                        <div class="arsenal-header">
+                            <span class="arsenal-category-title">AI / Machine Learning</span>
+                            <span class="arsenal-count">06 MODULES</span>
+                        </div>
+                        <div class="arsenal-chips-wrap">
+                            <span class="arsenal-chip">Machine Learning</span>
+                            <span class="arsenal-chip">NLP</span>
+                            <span class="arsenal-chip">Scikit-learn</span>
+                            <span class="arsenal-chip">PyTorch</span>
+                            <span class="arsenal-chip">Pandas</span>
+                            <span class="arsenal-chip">NumPy</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 3: AI Engineering -->
+                    <div class="arsenal-panel bracket-box">
+                        <div class="arsenal-header">
+                            <span class="arsenal-category-title">AI Engineering</span>
+                            <span class="arsenal-count">04 MODULES</span>
+                        </div>
+                        <div class="arsenal-chips-wrap">
+                            <span class="arsenal-chip">LLM API Integration</span>
+                            <span class="arsenal-chip">Prompt Engineering</span>
+                            <span class="arsenal-chip">FAISS Vector Search</span>
+                            <span class="arsenal-chip">Semantic Search</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 4: Backend / Web -->
+                    <div class="arsenal-panel bracket-box">
+                        <div class="arsenal-header">
+                            <span class="arsenal-category-title">Backend & Web Engineering</span>
+                            <span class="arsenal-count">07 MODULES</span>
+                        </div>
+                        <div class="arsenal-chips-wrap">
+                            <span class="arsenal-chip">Node.js</span>
+                            <span class="arsenal-chip">Django</span>
+                            <span class="arsenal-chip">React</span>
+                            <span class="arsenal-chip">REST APIs</span>
+                            <span class="arsenal-chip">WebSockets</span>
+                            <span class="arsenal-chip">HTML</span>
+                            <span class="arsenal-chip">CSS</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 5: Databases -->
+                    <div class="arsenal-panel bracket-box">
+                        <div class="arsenal-header">
+                            <span class="arsenal-category-title">Databases & Storage</span>
+                            <span class="arsenal-count">03 MODULES</span>
+                        </div>
+                        <div class="arsenal-chips-wrap">
+                            <span class="arsenal-chip">MySQL</span>
+                            <span class="arsenal-chip">PostgreSQL</span>
+                            <span class="arsenal-chip">MongoDB</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 6: Tools & Simulation -->
+                    <div class="arsenal-panel bracket-box">
+                        <div class="arsenal-header">
+                            <span class="arsenal-category-title">Tools & Simulation</span>
+                            <span class="arsenal-count">08 MODULES</span>
+                        </div>
+                        <div class="arsenal-chips-wrap">
+                            <span class="arsenal-chip">ROS2</span>
+                            <span class="arsenal-chip">PX4-Autopilot</span>
+                            <span class="arsenal-chip">Gazebo</span>
+                            <span class="arsenal-chip">Docker</span>
+                            <span class="arsenal-chip">Minikube</span>
+                            <span class="arsenal-chip">Git / GitHub</span>
+                            <span class="arsenal-chip">Postman</span>
+                            <span class="arsenal-chip">Streamlit</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Category 7: Core Computer Science -->
+                    <div class="arsenal-panel bracket-box">
+                        <div class="arsenal-header">
+                            <span class="arsenal-category-title">Core Computer Science</span>
+                            <span class="arsenal-count">05 MODULES</span>
+                        </div>
+                        <div class="arsenal-chips-wrap">
+                            <span class="arsenal-chip">Data Structures & Algorithms</span>
+                            <span class="arsenal-chip">OOP</span>
+                            <span class="arsenal-chip">DBMS</span>
+                            <span class="arsenal-chip">Operating Systems</span>
+                            <span class="arsenal-chip">Computer Networks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             6. Experience Section — Engineering Log & Timeline
+             ================================================================== -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header-block">
+                    <span class="section-label">CHRONOLOGICAL LOG</span>
+                    <h2 class="section-title">
+                        Engineering Experience & Academics
+                        <span class="section-title-sub">// RESEARCH INTERNSHIPS & FORMAL TRAINING</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="experience-log-container">
+                    
+                    <!-- Log 01: Research Internship IIITDM Kancheepuram -->
+                    <div class="log-entry">
+                        <div class="log-marker-beacon">01</div>
+                        <div class="log-content-card bracket-box">
+                            <div class="log-top-bar">
+                                <h3 class="log-role-title">Research Intern — FANET Routing and Machine Learning</h3>
+                                <span class="log-timeframe">MAY 2026 – JULY 2026</span>
+                            </div>
+                            <span class="log-org-sub">Indian Institute of Information Technology, Design and Manufacturing (IIITDM), Kancheepuram</span>
+                            <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--cyan-primary); margin-bottom: 0.75rem;">
+                                Under the mentorship and guidance of Dr. Preeth
+                            </p>
+                            
+                            <ul class="log-bullet-list">
+                                <li>Simulated complex Flying Ad-Hoc Networks (FANETs) using Gazebo, ROS2, and PX4-Autopilot software-in-the-loop (SITL).</li>
+                                <li>Engineered multi-UAV swarm scenarios and captured multi-variate telemetry data across a 30-drone simulated cluster.</li>
+                                <li>Synthesized dynamic mobility traces utilizing Random Waypoint (RWP) and Random Direction (RD) propagation models.</li>
+                                <li>Trained and benchmarked 13 supervised machine learning models (including XGBoost, CatBoost, and Random Forest ensembles) for predictive link connectivity and routing decisions.</li>
+                                <li>Attained an overall aggregate benchmark score of <strong>78.89%</strong> (with top-performing model routing classification accuracy reaching approximately <strong>87%</strong>).</li>
+                            </ul>
+                            
+                            <div class="log-tech-strip">
+                                <span class="tech-tag">ROS2</span>
+                                <span class="tech-tag">PX4-Autopilot</span>
+                                <span class="tech-tag">Gazebo</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">XGBoost</span>
+                                <span class="tech-tag">CatBoost</span>
+                                <span class="tech-tag">FANET</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Log 02: IIIT Tiruchirappalli B.Tech CSE -->
+                    <div class="log-entry">
+                        <div class="log-marker-beacon academic">02</div>
+                        <div class="log-content-card bracket-box">
+                            <div class="log-top-bar">
+                                <h3 class="log-role-title">B.Tech in Computer Science and Engineering</h3>
+                                <span class="log-timeframe">2023 – 2027 (PRESENT)</span>
+                            </div>
+                            <span class="log-org-sub">Indian Institute of Information Technology Tiruchirappalli (IIIT Trichy)</span>
+                            
+                            <ul class="log-bullet-list">
+                                <li>Active undergraduate in Computer Science with a cumulative academic standing of <strong>7.86 CGPA</strong>.</li>
+                                <li>Core focus in Data Structures, Algorithm Design, Database Systems, Computer Networks, and Applied Machine Learning.</li>
+                                <li>Hands-on systems development in containerized microservices and deep vector indexing systems.</li>
+                            </ul>
+                            
+                            <div class="log-tech-strip">
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">Operating Systems</span>
+                                <span class="tech-tag">Computer Networks</span>
+                                <span class="tech-tag">DBMS</span>
+                                <span class="tech-tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Log 03: Sri Chaitanya Junior College -->
+                    <div class="log-entry">
+                        <div class="log-marker-beacon academic">03</div>
+                        <div class="log-content-card bracket-box">
+                            <div class="log-top-bar">
+                                <h3 class="log-role-title">Higher Secondary Education (Class XI – XII)</h3>
+                                <span class="log-timeframe">2021 – 2023</span>
+                            </div>
+                            <span class="log-org-sub">Sri Chaitanya Junior College</span>
+                            <p style="font-size: 0.9rem; color: var(--steel-400);">
+                                Rigorous foundation in Mathematics, Physics, and Chemistry (MPC), leading to successful national qualification for IIIT admissions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Log 04: Sri Chaitanya School -->
+                    <div class="log-entry">
+                        <div class="log-marker-beacon academic">04</div>
+                        <div class="log-content-card bracket-box">
+                            <div class="log-top-bar">
+                                <h3 class="log-role-title">Secondary School Certificate (Class X)</h3>
+                                <span class="log-timeframe">2020 – 2021</span>
+                            </div>
+                            <span class="log-org-sub">Sri Chaitanya School</span>
+                            <p style="font-size: 0.9rem; color: var(--steel-400);">
+                                Graduated with strong mathematical and sciences foundation, achieving academic distinction.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             7. Certifications Section — Verified Credentials Vault
+             ================================================================== -->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <div class="section-header-block">
+                    <span class="section-label">VERIFIED CREDENTIAL VAULT</span>
+                    <h2 class="section-title">
+                        Academic & Research Certifications
+                        <span class="section-title-sub">// OFFICIAL RECOGNITIONS</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="cert-vault-grid">
+                    <!-- Certificate 01: IIITDM Kancheepuram -->
+                    <div class="cert-card bracket-box">
+                        <div>
+                            <div class="cert-top-meta">
+                                <span class="cert-verified-badge">✔ VERIFIED RESEARCH CREDENTIAL</span>
+                                <span class="cert-code">ID: IIITDMK-FANET-2026</span>
+                            </div>
+                            
+                            <a href="https://drive.google.com/file/d/1rgyGmWBheo0aTZaNvV6C1fNQMtNaPPtc/view?usp=sharing" target="_blank" rel="noopener" class="cert-title-link">
+                                Research Internship Certificate — IIITDM Kancheepuram ↗
                             </a>
-                            <a href="https://www.linkedin.com/in/mohammad-junaid-903518294?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn Profile" id="linkedin-profile-link">
-                                LinkedIn
+                            
+                            <span class="cert-institution">Under the Guidance of Dr. Preeth // Flying Ad-Hoc Networks</span>
+                            
+                            <p class="cert-description">
+                                Issued for successful completion of research internship on Flying Ad-Hoc Network (FANET) routing protocols using ROS2, PX4-Autopilot, and Gazebo UAV simulations, benchmarked with 13 supervised learning models.
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <a href="https://drive.google.com/file/d/1rgyGmWBheo0aTZaNvV6C1fNQMtNaPPtc/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
+                                ⚡ View Official Certificate [PDF] ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================================================================
+             8. Contact Section — Establish Connection
+             ================================================================== -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header-block">
+                    <span class="section-label">ESTABLISH CONNECTION</span>
+                    <h2 class="section-title">
+                        Transmit Telemetry
+                        <span class="section-title-sub">// OPEN COMMS CHANNELS</span>
+                    </h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="contact-dashboard-grid">
+                    <!-- Left: Contact Details & Quick Copy -->
+                    <div class="contact-comms-panel">
+                        <p class="comms-intro-text">
+                            Available for research collaborations, software engineering roles, and intelligent systems engineering. Transmit a dispatch or reach out directly across secure comms.
+                        </p>
+                        
+                        <div class="comms-channels-list">
+                            <!-- Email -->
+                            <div class="channel-card bracket-box">
+                                <div class="channel-info">
+                                    <span class="channel-type">Electronic Mail</span>
+                                    <a href="mailto:j27557343@gmail.com" class="channel-val" id="email-text">j27557343@gmail.com</a>
+                                </div>
+                                <button type="button" class="copy-btn" id="copy-email-btn" aria-label="Copy Email">
+                                    Copy Email
+                                </button>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="channel-card bracket-box">
+                                <div class="channel-info">
+                                    <span class="channel-type">Telephony / WhatsApp</span>
+                                    <a href="tel:+919652134605" class="channel-val">+91 9652134605</a>
+                                </div>
+                                <span class="mono" style="font-size: 0.72rem; color: var(--status-nominal);">DIRECT</span>
+                            </div>
+                            
+                            <!-- Location -->
+                            <div class="channel-card bracket-box">
+                                <div class="channel-info">
+                                    <span class="channel-type">Geographic Coordinates</span>
+                                    <span class="channel-val">Tiruchirappalli, Tamil Nadu, India</span>
+                                </div>
+                                <span class="mono" style="font-size: 0.72rem; color: var(--steel-400);">UTC+05:30</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Socials -->
+                        <div class="social-links-row">
+                            <a href="https://github.com/mohammedjunaid8055" target="_blank" rel="noopener" class="btn btn-secondary" id="git-profile-link">
+                                GitHub Profile ↗
+                            </a>
+                            <a href="https://www.linkedin.com/in/mohammad-junaid-903518294?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="btn btn-secondary" id="linkedin-profile-link">
+                                LinkedIn Profile ↗
                             </a>
                         </div>
                     </div>
                     
-                    <!-- Right: Form -->
-                    <div class="contact-form-wrap scroll-reveal delay-1">
+                    <!-- Right: Web3Forms Functional Transmission Box -->
+                    <div class="contact-form-box bracket-box">
                         <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                            <!-- Web3Forms Access Key Integration -->
+                            <!-- Real Web3Forms Access Key -->
                             <input type="hidden" name="access_key" value="798b8e04-de1b-49d0-b0f1-013f7c2e2adf">
                             
                             <div class="form-group">
                                 <label for="form-name" class="form-label">Full Name</label>
-                                <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name" required>
+                                <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name / affiliation" required>
                             </div>
                             
                             <div class="form-group">
@@ -419,15 +1159,15 @@
                             </div>
                             
                             <div class="form-group">
-                                <label for="form-message" class="form-label">Your Message</label>
-                                <textarea id="form-message" name="message" class="form-input" placeholder="Briefly describe your project or role..." required></textarea>
+                                <label for="form-message" class="form-label">Transmission Payload</label>
+                                <textarea id="form-message" name="message" class="form-input" placeholder="State your inquiry, project proposal, or engineering role..." required></textarea>
                             </div>
                             
                             <button type="submit" class="btn btn-primary" id="contact-submit" style="width: 100%;">
-                                Send Message
+                                Transmit Message [POST]
                             </button>
                             
-                            <div class="form-status-msg" id="form-status"></div>
+                            <div class="form-feedback-msg" id="form-status"></div>
                         </form>
                     </div>
                 </div>
@@ -435,30 +1175,34 @@
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- ======================================================================
+         9. Footer & System Status
+         ====================================================================== -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-layout">
-                <a href="#hero" class="footer-logo">
-                    Mohammed Junaid
-                </a>
-                <div class="footer-nav">
-                    <a href="#hero" class="footer-nav-link">Home</a>
-                    <a href="#about" class="footer-nav-link">About</a>
-                    <a href="#skills" class="footer-nav-link">Skills</a>
-                    <a href="#projects" class="footer-nav-link">Projects</a>
-                    <a href="#contact" class="footer-nav-link">Contact</a>
-                </div>
-                <p class="footer-copyright">
-                    © <span id="current-year">2026</span> Mohammed Junaid. All rights reserved.
-                </p>
+        <div class="container footer-inner">
+            <div class="footer-telemetry">
+                <span>MISSION_CONTROL // v2.7.4</span> • 
+                <span>OPERATOR: MOHAMMED JUNAID</span> • 
+                <span>© <span id="current-year">2026</span> ALL RIGHTS RESERVED</span>
+            </div>
+            
+            <div class="footer-nav">
+                <a href="#hero">TOP</a>
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#experience">EXP</a>
+                <a href="#contact">CONTACT</a>
             </div>
         </div>
     </footer>
 
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <!-- Toast Notification for Copy Email -->
+    <div class="toast-notice" id="toast-notice">
+        Telemetry payload copied to clipboard: j27557343@gmail.com
+    </div>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
